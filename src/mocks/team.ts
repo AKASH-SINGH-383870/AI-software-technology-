@@ -1,0 +1,100 @@
+export const teamMembers = [
+  // {
+  //   id: 1,
+  //   name: 'Rahul Verma',
+  //   role: 'Founder & CEO',
+  //   bio: '15+ years in enterprise software. Previously led engineering at Infosys. Built DigiIndia from a 3-person startup to 200+ team serving Fortune 500 clients across 12 countries.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20male%20CEO%20portrait%20headshot%2C%20confident%20smile%2C%20dark%20navy%20business%20suit%2C%20clean%20minimal%20studio%20background%20with%20subtle%20gradient%2C%20warm%20soft%20lighting%2C%20high%20quality%20corporate%20headshot%20photography%2C%20executive%20portrait%20style&width=400&height=400&seq=team-rahul&orientation=squarish',
+  //   socials: { linkedin: '#', twitter: '#' },
+  //   expertise: ['Strategy', 'Enterprise Sales', 'Leadership'],
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Ananya Patel',
+  //   role: 'Chief Technology Officer',
+  //   bio: 'Ex-Google engineer with deep expertise in distributed systems and AI. Holds 3 patents in machine learning. Architected platforms handling 10M+ daily active users.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20female%20CTO%20portrait%20headshot%2C%20confident%20expression%2C%20elegant%20black%20blazer%2C%20clean%20minimal%20studio%20background%2C%20warm%20natural%20lighting%2C%20high%20quality%20corporate%20headshot%20photography%2C%20tech%20executive%20style&width=400&height=400&seq=team-ananya&orientation=squarish',
+  //   socials: { linkedin: '#', twitter: '#' },
+  //   expertise: ['AI/ML', 'Cloud Architecture', 'System Design'],
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Vikram Shah',
+  //   role: 'VP of Engineering',
+  //   bio: 'Scaled engineering teams from 5 to 80+ engineers. Expert in agile methodologies, CI/CD, and DevOps. Delivered 200+ enterprise projects on time and within budget.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20male%20engineering%20VP%20portrait%20headshot%2C%20friendly%20smile%2C%20grey%20blazer%20with%20white%20shirt%2C%20clean%20minimal%20studio%20background%2C%20soft%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-vikram&orientation=squarish',
+  //   socials: { linkedin: '#' },
+  //   expertise: ['Team Scaling', 'Project Delivery', 'DevOps'],
+  // },
+  // {
+  //   id: 4,
+  //   name: 'Priya Krishnan',
+  //   role: 'Head of Design',
+  //   bio: 'Award-winning UX designer with 12 years of experience. Former lead at Adobe. Created design systems adopted by 50+ products. Passionate about accessibility and inclusive design.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20female%20design%20lead%20portrait%20headshot%2C%20creative%20warm%20smile%2C%20burgundy%20blazer%2C%20clean%20minimal%20studio%20background%20with%20subtle%20warm%20gradient%2C%20natural%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-priya&orientation=squarish',
+  //   socials: { linkedin: '#', dribbble: '#' },
+  //   expertise: ['UX Strategy', 'Design Systems', 'Accessibility'],
+  // },
+  // {
+  //   id: 5,
+  //   name: 'Arjun Mehta',
+  //   role: 'Head of AI & Automation',
+  //   bio: 'PhD in Computer Science from IIT Bombay. Published 20+ research papers on NLP and computer vision. Built AI systems processing 50M+ predictions daily for enterprise clients.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20male%20AI%20researcher%20portrait%20headshot%2C%20intellectual%20expression%2C%20dark%20blue%20sweater%20over%20collar%20shirt%2C%20clean%20minimal%20studio%20background%2C%20soft%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-arjun&orientation=squarish',
+  //   socials: { linkedin: '#', github: '#' },
+  //   expertise: ['NLP', 'Computer Vision', 'Deep Learning'],
+  // },
+  // {
+  //   id: 6,
+  //   name: 'Neha Sharma',
+  //   role: 'VP of Sales',
+  //   bio: 'Closed ₹100Cr+ in enterprise deals. Deep network across Fortune 500s in India, UAE, and Singapore. Known for building long-term client relationships that last decades.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20female%20sales%20VP%20portrait%20headshot%2C%20confident%20warm%20smile%2C%20teal%20business%20suit%2C%20clean%20minimal%20studio%20background%20with%20subtle%20gradient%2C%20warm%20soft%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-neha&orientation=squarish',
+  //   socials: { linkedin: '#' },
+  //   expertise: ['Enterprise Sales', 'Client Relations', 'Revenue Growth'],
+  // },
+  // {
+  //   id: 7,
+  //   name: 'Karan Desai',
+  //   role: 'Cloud Architect',
+  //   bio: 'AWS-certified Solutions Architect with 10 years of cloud experience. Migrated 500+ workloads to cloud with zero downtime. Cost optimization saved clients ₹50Cr+ annually.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20male%20cloud%20architect%20portrait%20headshot%2C%20thoughtful%20expression%2C%20charcoal%20grey%20blazer%2C%20clean%20minimal%20studio%20background%2C%20soft%20even%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-karan&orientation=squarish',
+  //   socials: { linkedin: '#', github: '#' },
+  //   expertise: ['AWS', 'Kubernetes', 'Infrastructure'],
+  // },
+  // {
+  //   id: 8,
+  //   name: 'Riya Chopra',
+  //   role: 'Product Manager',
+  //   bio: 'Product leader who shipped 30+ products from concept to launch. MBA from IIM Bangalore. Obsessed with user research and data-driven product decisions.',
+  //   image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20female%20product%20manager%20portrait%20headshot%2C%20bright%20friendly%20smile%2C%20cream%20blazer%20over%20black%20top%2C%20clean%20minimal%20studio%20background%20with%20warm%20gradient%2C%20natural%20lighting%2C%20high%20quality%20corporate%20headshot%20photography&width=400&height=400&seq=team-riya&orientation=squarish',
+  //   socials: { linkedin: '#', twitter: '#' },
+  //   expertise: ['Product Strategy', 'User Research', 'Analytics'],
+  // },
+];
+
+export const companyStats = [
+  { value: '200+', label: 'Team Members', icon: 'ri-team-line' },
+  { value: '12+', label: 'Countries Served', icon: 'ri-global-line' },
+  { value: '500+', label: 'Projects Delivered', icon: 'ri-stack-line' },
+  { value: '98%', label: 'Client Retention', icon: 'ri-heart-line' },
+  { value: '₹100Cr+', label: 'Revenue Generated for Clients', icon: 'ri-money-dollar-circle-line' },
+  { value: '15+', label: 'Years of Excellence', icon: 'ri-award-line' },
+];
+
+export const milestones = [
+  { year: '2022', title: 'Founded in Delhi', desc: 'Started with 3 engineers in a small apartment.' },
+  { year: '2023', title: 'First Enterprise Client', desc: 'Signed a Fortune 500 manufacturing company.' },
+  { year: '2023', title: 'ISO 27001 Certified', desc: 'Achieved enterprise-grade security certification.' },
+  { year: '2024', title: '50+ Team Members', desc: 'Expanded to Pune and Bangalore offices.' },
+  { year: '2025', title: 'AI Division Launched', desc: 'Built proprietary ML models for healthcare.' },
+  { year: '2026', title: 'International Expansion', desc: 'Opened offices in Dubai and Singapore.' },
+  { year: '2026', title: '200+ Projects Milestone', desc: 'Crossed 200 successfully delivered projects.' },
+];
+
+export const values = [
+  { icon: 'ri-user-star-line', title: 'Client First', desc: 'Every decision starts with what is best for our clients.' },
+  { icon: 'ri-lightbulb-flash-line', title: 'Innovation', desc: 'We push boundaries and embrace emerging technologies.' },
+  { icon: 'ri-shield-check-line', title: 'Integrity', desc: 'Transparent, honest, and ethical in everything we do.' },
+  { icon: 'ri-rocket-line', title: 'Excellence', desc: 'Good is never enough. We strive for world-class quality.' },
+];

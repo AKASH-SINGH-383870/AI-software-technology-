@@ -1,0 +1,115 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {
+        colors: {
+          primary: {
+            50: '#eff6ff',
+            100: '#dbeafe',
+            200: '#bfdbfe',
+            300: '#93c5fd',
+            400: '#60a5fa',
+            500: '#0057D9',
+            600: '#0046b3',
+            700: '#00368c',
+            800: '#002766',
+            900: '#001840',
+            950: '#000d26',
+          },
+          accent: {
+            50: '#e0f7ff',
+            100: '#b8eeff',
+            200: '#80e3ff',
+            300: '#3dd5ff',
+            400: '#00c7ff',
+            500: '#00C2FF',
+            500: '#00C2FF',
+            600: '#009bcc',
+            700: '#007799',
+            800: '#005566',
+            900: '#00333d',
+            950: '#001a1f',
+          },
+          dark: {
+            50: '#e6e8ed',
+            100: '#bcc1cc',
+            200: '#9299aa',
+            300: '#687289',
+            400: '#3e4b68',
+            500: '#07111F',
+            600: '#060e1a',
+            700: '#050b14',
+            800: '#04080f',
+            900: '#02060a',
+            950: '#010305',
+          },
+          surface: {
+            light: '#F8FAFC',
+            card: 'rgba(255,255,255,0.03)',
+            glass: 'rgba(255,255,255,0.05)',
+            'glass-border': 'rgba(255,255,255,0.08)',
+          },
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          heading: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
+          body: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        animation: {
+          'float': 'float 6s ease-in-out infinite',
+          'float-delayed': 'float 6s ease-in-out 2s infinite',
+          'float-slow': 'float 8s ease-in-out infinite',
+          'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+          'aurora': 'aurora 15s ease infinite',
+          'spin-slow': 'spin 20s linear infinite',
+          'spin-slower': 'spin 30s linear infinite',
+          'slide-up': 'slideUp 0.6s ease-out',
+          'fade-in': 'fadeIn 0.8s ease-out',
+          'scale-in': 'scaleIn 0.5s ease-out',
+          'tilt': 'tilt 10s ease-in-out infinite',
+        },
+        keyframes: {
+          float: {
+            '0%, 100%': { transform: 'translateY(0px)' },
+            '50%': { transform: 'translateY(-20px)' },
+          },
+          'pulse-glow': {
+            '0%, 100%': { opacity: '1', boxShadow: '0 0 20px rgba(0,194,255,0.3)' },
+            '50%': { opacity: '0.8', boxShadow: '0 0 40px rgba(0,194,255,0.6)' },
+          },
+          aurora: {
+            '0%, 100%': { backgroundPosition: '0% 50%' },
+            '50%': { backgroundPosition: '100% 50%' },
+          },
+          slideUp: {
+            '0%': { opacity: '0', transform: 'translateY(30px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+          fadeIn: {
+            '0%': { opacity: '0' },
+            '100%': { opacity: '1' },
+          },
+          scaleIn: {
+            '0%': { opacity: '0', transform: 'scale(0.9)' },
+            '100%': { opacity: '1', transform: 'scale(1)' },
+          },
+          tilt: {
+            '0%, 100%': { transform: 'rotate(0deg)' },
+            '25%': { transform: 'rotate(0.5deg)' },
+            '75%': { transform: 'rotate(-0.5deg)' },
+          },
+        },
+        backgroundImage: {
+          'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          'aurora-1': 'linear-gradient(135deg, #0057D9 0%, #00C2FF 50%, #0057D9 100%)',
+          'aurora-2': 'linear-gradient(225deg, #00368c 0%, #00C2FF 30%, #0057D9 70%, #00368c 100%)',
+          'mesh-gradient': 'linear-gradient(135deg, rgba(0,87,217,0.1) 0%, rgba(0,194,255,0.05) 50%, rgba(0,87,217,0.1) 100%)',
+        },
+      },
+    },
+    plugins: [],
+  }

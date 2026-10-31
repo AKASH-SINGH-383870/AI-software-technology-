@@ -1,0 +1,64 @@
+# https://www.digiindiasolutions.com
+# Digi India Solutions - robots.txt
+# Last-Modified: 2026-07-25
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cdn-cgi/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 2
+
+# Sitemaps
+Sitemap: https://www.digiindiasolutions.com/sitemap.xml
+
+# Specific bots
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 5
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3

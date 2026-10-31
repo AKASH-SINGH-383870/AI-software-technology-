@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-500 text-white font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-500/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-500;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Cards */
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-500 hover:bg-white/[0.06] hover:border-white/[0.12] hover:shadow-[0_0_40px_rgba(0,194,255,0.08)];
+  }
+
+  /* Neumorphism Elements */
+  .neumorph {
+    @apply bg-dark-500 rounded-2xl;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4), -4px -4px 12px rgba(255, 255, 255, 0.02);
+  }
+
+  .neumorph-pressed {
+    @apply bg-dark-500 rounded-2xl;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5), inset -2px -2px 6px rgba(255, 255, 255, 0.02);
+  }
+
+  /* Glass Button */
+  .glass-btn {
+    @apply relative overflow-hidden bg-white/[0.06] backdrop-blur-md border border-white/[0.1] rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-500 hover:bg-white/[0.12] hover:border-white/[0.2] hover:shadow-[0_0_30px_rgba(0,194,255,0.15)];
+  }
+
+  .glass-btn-primary {
+    @apply glass-btn bg-primary-500/80 border-primary-400/30 hover:bg-primary-400/90 hover:border-primary-300/50 hover:shadow-[0_0_40px_rgba(0,87,217,0.3)];
+  }
+
+  /* Section Title */
+  .section-tag {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-medium tracking-widest uppercase mb-4;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-white/50 text-base md:text-lg leading-relaxed max-w-2xl;
+  }
+
+  /* Aurora Background */
+  .aurora-bg {
+    background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 87, 217, 0.15), transparent),
+                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(0, 194, 255, 0.08), transparent),
+                radial-gradient(ellipse 60% 50% at 20% 50%, rgba(0, 87, 217, 0.1), transparent);
+  }
+
+  /* Grid Background */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-accent-400 to-primary-300;
+  }
+
+  .text-gradient-light {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/60;
+  }
+
+  /* Animated Border */
+  .animated-border {
+    position: relative;
+  }
+
+  .animated-border::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(0, 194, 255, 0.5), rgba(0, 87, 217, 0.5), rgba(0, 194, 255, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes borderGlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  /* Glow Dot */
+  .glow-dot {
+    @apply relative;
+  }
+
+  .glow-dot::before {
+    content: '';
+    @apply absolute inset-0 rounded-full bg-accent-400;
+    animation: glowPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 5px rgba(0, 194, 255, 0.5), 0 0 20px rgba(0, 194, 255, 0.2); }
+    50% { box-shadow: 0 0 10px rgba(0, 194, 255, 0.8), 0 0 40px rgba(0, 194, 255, 0.4); }
+  }
+
+  /* Floating Animation Delay Variants */
+  .animate-float-delay-1 { animation-delay: 0.5s; }
+  .animate-float-delay-2 { animation-delay: 1.5s; }
+  .animate-float-delay-3 { animation-delay: 2.5s; }
+  .animate-float-delay-4 { animation-delay: 3.5s; }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Honeypot hidden styling */
+.hp-field,
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
